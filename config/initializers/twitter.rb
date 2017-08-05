@@ -1,6 +1,6 @@
 class TwitterApi
 	def self.my_tweets
-		client.user_timeline('PrzemekMarkows1')
+		client.user_timeline('Pshemski')
 	end
 
 	def self.client 

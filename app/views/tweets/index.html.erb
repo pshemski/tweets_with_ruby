@@ -1,0 +1,11 @@
+<h1>Welcome to Tweets with Ruby</h1>
+<p>On this app you are able to see all my tweets from the Twitter that contain word <strong>"ruby"</strong>.</p>
+
+<h3>Tweets:</h3>
+<ul>
+	<% TwitterApi.my_tweets.each do |tweet| %>
+		<% if tweet.text.downcase.include?('ruby') %>
+			<li><em><%= tweet.text %></em></li>
+		<% end %>
+	<% end %>
+</ul>
